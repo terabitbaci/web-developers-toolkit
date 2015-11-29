@@ -1,0 +1,73 @@
+body {
+	color:white;
+	}
+
+/* media query is a set of conditions in which the code inside will be executed*/
+
+/*desktop first approach*/
+
+/*ipad lanscape / small laptop*/
+@media only screen and (max-width: 1024px) {
+	body  {
+		color:blue;
+	}
+}
+
+/*ipad potrait*/
+@media only screen and (max-width: 768px) {
+	body  {
+		color:red;
+	}
+}
+
+/*iPhone landscape*/
+@media only screen and (max-width: 480px) {
+	body  {
+		color:green;
+	}
+}
+
+/*iPhone portrait*/
+@media only screen and (max-width: 320px) {
+	body  {
+		color:purple;
+	}
+}
+
+
+
+
+/*mobile first approach*/
+
+/*iPhone portrait*/
+@media only screen and (min-width: 320px) {
+	body  {
+		color:purple;
+	}
+}
+
+/*iPhone landscape*/
+@media only screen and (min-width: 480px) {
+	body  {
+		color:green;
+	}
+}
+
+
+
+/*ipad potrait*/
+@media only screen and (min-width: 768px) {
+	body  {
+		color:red;
+	}
+}
+
+/*ipad lanscape / small laptop*/
+@media only screen and (min-width: 1024px) {
+	body  {
+		color:blue;
+	}
+}
+
+
+
