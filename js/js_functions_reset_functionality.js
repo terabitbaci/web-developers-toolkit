@@ -2,25 +2,23 @@ var user = {
     name: "mr smith",
     profession: "dandy fella",
     age: 100000,
-    //___________________________<---add reset() method here
-    // restore initial values
-      reset: function() {
-          this.name = '-';
-          this.profession = '-';
-          this.age = '-';
-      }
+
+    // reset menthod (you can rest to "undefined" or to anything else; bellow is example with the reset to "-")
+    reset: function () {
+        this.name = '-'; //"this" means is refering to the above object
+        this.profession = '-';
+        this.age = '-';
+    }
 
 }
 
 
-//___________________________________The result should look like this:
-
-//user.reset();
-
-//undefined variable
-alert(user.banana); //________________________undefined
+//run the reset function
+user.reset();
 
 
-//alert(user.name); //________________________undefined
-//alert(user.profession); //__________________undefined
-//alert(user.age); //_________________________undefined
+
+//alert(user.name); // will show "-"
+//alert(user.profession); // will show "-"
+//alert(user.age); // will show "-"
+alert(user.banana); // will show "undefined"
