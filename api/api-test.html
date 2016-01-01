@@ -44,13 +44,13 @@
                 /* if the results are meeningful, we can just console.log them */
                 console.log(result);
 
-                /* if the results are not meeningful, it might help to convert them to string first */
+                /* if the results are not meeningful, it might help to convert them to string first
                 var displayStringifiedResults = JSON.stringify(result);
-                console.log(displayStringifiedResults);
+                console.log(displayStringifiedResults);*/
 
-                /* if the results contain ivalid json, it might help to sanitize them first */
+                /* if the results contain ivalid json, it might help to sanitize them first
                 var displaySanitizedResults = sanitizeJSON(result);
-                console.log(displaySanitizedResults);
+                console.log(displaySanitizedResults);*/
 
             })
 
@@ -62,36 +62,13 @@
             });
 
 
-            /*
-                    *******************
-                    food2fork.com example (NOT WORKING)
-                    *******************
 
-                    var request = {key: '05e604a8ad49609e35434f801b205d87',
-                        q: 'chicken'};
-
-                    var result = $.ajax({
-                        url: "http://food2fork.com/api/search",
-                        data: request,
-                        dataType: "jsonp",
-                        type: "GET",
-                        })
-                    .done(function(result){
-                        var displayResults = "Data from Server : " + JSON.stringify(result);
-                        console.log(displayResults);
-                    })
-                    .fail(function(jqXHR, error, errorThrown){
-                        console.log(jqXHR);
-                        console.log(error);
-                        console.log(errorThrown);
-                    });
-                    */
 
 
 
             /*
             *******************
-            example of Access-Control-Request-Headers for JSON (NOT WORKING)
+            example of Access-Control-Request-Headers for JSON
             *******************
             $.ajax({
                     url: "http://food2fork.com/api/search?key=05e604a8ad49609e35434f801b205d87&q=chicken",
@@ -113,7 +90,7 @@
 
             /*
             *******************
-            example of CORSRequest (NOT WORKING)
+            example of CORSRequest12
             *******************
 
                 // Create the XHR object.
