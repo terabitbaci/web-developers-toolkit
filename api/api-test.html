@@ -36,7 +36,7 @@
                 data: params,
                 dataType: "jsonp",
                 /*set the call type GET / POST*/
-                type: "GET",
+                type: "GET"
             })
 
             /* if the call is successful (status 200 OK) show results */
@@ -48,7 +48,7 @@
                 var displayStringifiedResults = JSON.stringify(result);
                 console.log(displayStringifiedResults);*/
 
-                /* if the results contain ivalid json, it might help to sanitize them first
+                /* if the results contain invalid json, it might help to sanitize them first
                 var displaySanitizedResults = sanitizeJSON(result);
                 console.log(displaySanitizedResults);*/
 

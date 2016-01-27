@@ -2,10 +2,10 @@
 var number = 2;
 
 //global function (class =  group of functions and objects)
-function allOperations(x) {
+function allOperations(value) {
 
     //global variable  for functions bellow but local for the parent function
-    var z = 0;
+    var x = 0;
 
     //local function
     function duplicate(a) {
@@ -39,7 +39,7 @@ function allOperations(x) {
     //that is the same with the line bellow
     var orange = duplicate(triplicate(3));
 
-    z = duplicate(triplicate(square(duplicateSquare(x))));
+    var z = duplicate(triplicate(square(duplicateSquare(value))));
 
     return z;
 }
