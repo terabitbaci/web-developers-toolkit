@@ -56,11 +56,11 @@ var myNeighbors = {
     lastName: "Doe",
     age: 49,
     constructFullNameAndAge: function () {
-        constructor = "My name is " + this.firstName + " " + this.lastName + " and I am " + this.age + " years old";
+        var constructor = "My name is " + this.firstName + " " + this.lastName + " and I am " + this.age + " years old";
         return constructor;
     },
     birthdayGreeting: function () {
-        birthdayLetter = "Dear " + this.firstName + " " + this.lastName + ", I would like to whish you a Happy Birthday and all the best on your " + this.age + "th aniversary.";
+        var birthdayLetter = "Dear " + this.firstName + " " + this.lastName + ", I would like to wish you a Happy Birthday and all the best on your " + this.age + "th aniversary.";
         return birthdayLetter;
     }
 }
