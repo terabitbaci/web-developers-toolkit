@@ -1,6 +1,9 @@
 /*
 The CSS code gets to executed from top to bottom and left ro right
 
+Basic rules to write CSS
+- write GENERAL rules first (for all the paragraph tags in the website for example) and only after that write CSS for SPECIFIC tags (for example the paragraph tags inside the footer)
+- write the css styles to define for the parent (outside) container and THEN the children (inside containers) of that parent and THEN the children (inside containers) of the child above
 */
 
 
@@ -27,28 +30,33 @@ The CSS code gets to executed from top to bottom and left ro right
 }
 
 
-/* General styles
+/* General styles (General Module, wrapping around the modules bellow)
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
 body {}
 
 
-/* Header styles
+/* Header styles (Main Module)
     (all the styles inside the < header > or < nav > tags)
 */
 
 
-/* Content styles
+/* Content styles (Main Module)
     (all the styles inside the < sections > or < aside > tags)
 */
 
 
-/* Footer styles
+/* Footer styles (Main Module)
     (all the styles inside the < footer > tag)
 */
 
 
-/* Responsive styles
+/*
+place all the desktop styles above this line
+
+Responsive styles
     (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+
+place all the mobile tables styles bellow this line
 */
