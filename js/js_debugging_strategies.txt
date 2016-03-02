@@ -1,0 +1,11 @@
+/* debugging strategies
+debugging level 1 => check if JS syntax is correct (check console in Web Dev )
+debugging level 2 => check if the targeting is working (check the connection between the HTML element and equivalent JS functionality ==> alert("here"); inside the function)
+debugging level 3 => check if the logic makes sense (check if the JS functionality returns what we expect ==> alert alert(VALUE-NAME); inside the function)
+*/
+
+Check the logic inside the functions and objects (variable definitions, ifs, loops, etc. )
+
+Check the variable, object flow between the functions
+
+Check the final output
