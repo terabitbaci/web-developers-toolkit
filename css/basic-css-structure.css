@@ -7,7 +7,8 @@ Basic rules to write CSS
 */
 
 
-/* CSS reset
+/* -------------------------------------
+CSS reset
     (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
 */
 
@@ -30,29 +31,33 @@ Basic rules to write CSS
 }
 
 
-/* General styles (General Module, wrapping around the modules bellow)
+/* -------------------------------------
+General styles (General Module, wrapping around the modules bellow)
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
 body {}
 
 
-/* Header styles (Main Module)
+/* -------------------------------------
+Header styles (Main Module)
     (all the styles inside the < header > or < nav > tags)
 */
 
 
-/* Content styles (Main Module)
+/* -------------------------------------
+Content styles (Main Module)
     (all the styles inside the < sections > or < aside > tags)
 */
 
 
-/* Footer styles (Main Module)
+/* -------------------------------------
+Footer styles (Main Module)
     (all the styles inside the < footer > tag)
 */
 
 
-/*
+/* -------------------------------------
 place all the desktop styles above this line
 
 Responsive styles
