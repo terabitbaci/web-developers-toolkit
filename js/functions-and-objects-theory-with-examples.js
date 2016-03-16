@@ -60,7 +60,7 @@ var myNeighbors = {
         return constructor;
     },
     birthdayGreeting: function () {
-        var birthdayLetter = "Dear " + this.firstName + " " + this.lastName + ", I would like to wish you a Happy Birthday and all the best on your " + this.age + "th aniversary.";
+        var birthdayLetter = "Dear " + this.firstName + " " + this.lastName + ", I would like to wish you a Happy Birthday and all the best on your " + this.age + "th anniversary.";
         return birthdayLetter;
     }
 }
