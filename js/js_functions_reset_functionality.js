@@ -5,7 +5,7 @@ var user = {
 
     // reset method (you can reset to "undefined" or to anything else; below is example with the reset to "-")
     reset: function () {
-        this.name = '-'; //"this" means is referring to the above object (i.e. user)
+        this.name = '-'; // "this" refers to the above object (i.e. user)
         this.profession = '-';
         this.age = '-';
     }
