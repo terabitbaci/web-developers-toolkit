@@ -1,26 +1,41 @@
-Initial Cycle (create the repository ON THE SERVER and clone it localy )
-	github.com -> create repository
-	github.com -> clone repository on own computer into command line (Github Desktop UI Software)
-	
+Initial Cycle (create the repository ON THE SERVER and then clone it locally)
+    github.com -> create repository
+    github.com -> clone repository on own computer using the command line or the Github Desktop UI Software
+
+
+
 
 Daily Cycle (commit changes and syncronize)
-	inside the repository folder
-	
-	//prepack the code
-	1) git add . ;  //add all the files to be pre-packed for the commit in that particular folder	
-	2) git commit -m 'Some message';  //commit is happening only on the local machine (no communication with the server possible); -m stand for a message (it is a message to self about the content of that commit; example: changing the header color)
-	
-	//send it to the server
-	3) git pull origin master; //download all the code from the server and make sure there are no conflict with your own code	
-	4) git push --set-upstream origin master //synchronise your own code with the server
-	
-	
-	shortcut
-	git add . ; git commit -m 'Initial Commit'; git pull origin master; git push --set-upstream origin master
-	
-	
-	Master and branches
-	
-	-> Master (in production evironment this is the live website)
-		--> branch_1 (some branch to test something)
-		--> gh-pages (in Github this is the live website)
+    Note: Run the following command inside the repository folder
+
+    //prepack the code
+    1) git add . ;
+        --> means add all the files to be pre-packed for the commit in that particular folder
+    2) git commit -m 'Some message for you future self explaining why is this commit important';
+        --> means commit is happening only on the local machine (no communication with the server possible); -m stand for a message (it is a message to self about the content of that commit; example: changing the header color)
+
+    //send it to the server
+    3) git pull origin master;
+        --> means download all the code from the server and make sure there are no conflict with your own code
+    4) git push --set-upstream origin master;
+        --> means synchronise your own code with the server
+
+
+    All commands on one line shortcut:
+    git add . ; git commit -m 'REPLACE-ME'; git pull origin master; git push --set-upstream origin master
+
+
+
+
+When to commit code to the server?
+    -> when a particular part of the code is completed (let's say the footer is ready)
+    -> at the end of the day (but only if the code is fully functional and has no bugs)
+
+
+
+
+Master and branches
+
+-> Master (in production environment this is the live website)
+        --> branch_1 (some branch to test something)
+        --> gh-pages (in Github this is the live website)
