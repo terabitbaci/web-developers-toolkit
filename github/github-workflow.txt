@@ -1,11 +1,11 @@
-Initial Cycle (create the repository ON THE SERVER and then clone it locally)
+Create a new project cycle (create the repository ON THE Github.com SERVER and then clone it locally)
     github.com -> create repository
     github.com -> clone repository on own computer using the command line or the Github Desktop UI Software
 
 
 
 
-Daily Cycle (commit changes and syncronize)
+Daily back-up your project Cycle (commit changes and syncronize)
     Note: Run the following command inside the repository folder
 
     //prepack the code
