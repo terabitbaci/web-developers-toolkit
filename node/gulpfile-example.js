@@ -1,3 +1,35 @@
+/* Plugins list and details
+
+LiveReload (https://www.npmjs.com/package/gulp-livereload/): refreshes the browser automatically when you save files
+
+JSHint (https://www.npmjs.com/package/gulp-jshint/): a JavaScript linter that checks your code for errors and gives you warnings if you stray from best practices
+
+Bower (https://www.npmjs.com/package/gulp-bower): a package manager, similar to NPM, that handles front end dependencies
+
+Rename (https://www.npmjs.com/package/gulp-rename/): a Gulp plugin that allows you to easily rename files without breaking your projects
+
+Browserify (https://www.npmjs.com/package/browserify): lets you use require() in the browser by bundling up all of your NPM module dependencies
+
+Concat (https://www.npmjs.com/package/gulp-concat/): concatenates multiple files in your dev environment into single files to be used in your production environment
+
+UglifyJS (https://www.npmjs.com/package/gulp-uglify/): minifies your JavaScript, removing unnecessary characters from your code
+
+Minify HTML (https://www.npmjs.com/package/gulp-minify-html/): minifies your HTML files
+
+Imagemin (https://www.npmjs.com/package/gulp-imagemin): Minifies and optimizes image files (PNG, JPEG, GIF, and SVG)
+
+Sass (https://www.npmjs.com/package/gulp-sass/): a CSS preprocessor that you will learn all about in the next lesson
+
+
+
+To install all of the dependencies listed above, run the following command:
+
+npm install --save-dev gulp-connect gulp-jshint gulp-bower gulp-rename gulp-concat gulp-uglify gulp-minify-html gulp-imagemin gulp-sass node-bourbon node-neat browserify vinyl-source-stream vinyl-buffer
+
+*/
+
+
+
 var gulp = require('gulp');
 
 var jshint = require('gulp-jshint');
