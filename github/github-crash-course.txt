@@ -23,9 +23,12 @@ How to use Git
 
 There are 3 ways we use github:
 
-1. To create backups (this is the most often usage for it at Thinkful). We only do that when we know that the code has no bugs or conflicts and a part of the website is complete (for example "header ready").
-2. To test new code: we create a new branch from the master and we call that branch the name of we want to build (lets say footer); we continue working on that branch until the footer is ready; after that we take all the code from the master, we make sure that there are no conflicts or errors, and than we push the code back to master (including the new functionality).
-3. When multiple developers are working on the same website: each developer creates a new branch with the name of they want to build (let’s say one is building the login and the other the shopping chart); they keep working in their own branches until they complete the tasks; after that they take all the code from the master, we make sure that there are no conflicts or errors, and than they push the code back to master (including the new functionality).
+1. To create backups (this is the most often usage for it at Thinkful):
+    --> We only do that when we know that the code has no bugs or conflicts and a part of the website is complete (for example "header ready").
+2. To test new code:
+    --> We create a new branch from the master and we call that branch the name of we want to build (lets say footer); we continue working on that branch until the footer is ready; after that we take all the code from the master, we make sure that there are no conflicts or errors, and than we push the code back to master (including the new functionality).
+3. When multiple developers are working on the same code:
+    --> Each developer creates a new branch with the name of they want to build (let’s say one is building the login and the other the shopping chart); they keep working in their own branches until they complete the tasks; after that they take all the code from the master, we make sure that there are no conflicts or errors, and than they push the code back to master (including the new functionality).
 
 
 
