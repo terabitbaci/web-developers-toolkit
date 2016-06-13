@@ -39,7 +39,7 @@ How the Git works
 
 There are 2 main cycles:
 
-    Create a new project cycle (create the repository ON THE Github.com SERVER and then clone it locally)
+Create a new project cycle (create the repository ON the Github.com SERVER and then clone it locally)
         github.com -> create repository
         github.com -> clone repository on own computer using the command line or the Github Desktop UI Software
 
@@ -51,7 +51,7 @@ Daily back-up your project Cycle (commit changes and synchronize)
 
         //prepack the code
         1) git add . ;
-            --> means add all the files to be pre-packed for the commit in that particular folder
+            --> means add all the files in that particular folder to be pre-packed for the commit
         2) git commit -m 'Some message for you future self explaining why is this commit important';
             --> means commit is happening only on the local machine (no communication with the server possible); -m stand for a message (it is a message to self about the content of that commit; example: changing the header color)
 

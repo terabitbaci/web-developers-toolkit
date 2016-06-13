@@ -11,7 +11,7 @@ node -v
 
 
 ———————————
-install NVM 
+install NVM
 - on a Mac
 
 curl https://raw.githubusercontent.com/creationix/nvm/v0.12.1/install.sh | bash
@@ -44,7 +44,7 @@ install Gulp
 sudo npm install -g gulp
 
 test Gulp installation
-nvm -v
+gulp -v
 
 
 ———————————
