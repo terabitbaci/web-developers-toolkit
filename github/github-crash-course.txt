@@ -80,3 +80,10 @@ Master and branches
 -> Master (in production environment this is the live website)
         --> branch_1 (some branch to test something)
         --> gh-pages (in Github this is the live website)
+
+
+How to merge the Master into GH-Pages
+
+git checkout gh-pages
+git merge master
+git push origin gh-pages
