@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* px */
+
+        body {
+            text-align: center;
+            font-size: 20px;
+            /*if body font-size is not specified, by default is going to be 16px */
+        }
+        /*
+        h1 in "em"
+        is caculated in % of size relative to the imediate parent (1.5 em = 150%) (in this case the body)
+         */
+
+        h1 {
+            color: aquamarine;
+            font-size: 2em;
+            /*200% * 20px = 40px*/
+        }
+        /*
+        h1 in "rem"
+        is caculated in % of size relative to the body font size (1.5 rem = 150%)
+        */
+
+        h1 {
+            color: aquamarine;
+            font-size: 2rem;
+            /*200% * 20px = 40px*/
+        }
+        /*
+        span in "em"
+        as the span is the child of the h1, it is caculated in % of size relative to the imediate parent (in this case the h1)
+        */
+
+        h1 span {
+            color: aqua;
+            font-size: 3em;
+            /*300% * 40px = 120px*/
+        }
+        /*
+        span in "rem"
+        is caculated in % of size relative to the body font size (independent of the imediate parent)
+        */
+
+        h1 span {
+            color: aqua;
+            font-size: 3rem
+            /*300% * 20px = 60px*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <h1>Welcome to <span> some great website</span></h1>
+    </body>
+</body>
+
+</html>
