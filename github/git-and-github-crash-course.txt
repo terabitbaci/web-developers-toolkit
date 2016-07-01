@@ -12,7 +12,7 @@ Git was initially designed and developed in 2005 by Linux kernel developers (inc
 What is the difference between Git and Github
 ------------------------------------------
 
-Git is the system, Github is the interface to that system. Apart from Github, you can also control Git using command line or Github Desktop software (https://desktop.github.com/).
+Git is the system, Github is the interface to that system. The Git is like engine in a car and Github is the dashboard. Apart from Github, you can also control Git using command line or Github Desktop software (https://desktop.github.com/).
 
 
 
