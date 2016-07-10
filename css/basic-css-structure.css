@@ -9,7 +9,7 @@ Basic rules to write CSS
 
 /* -------------------------------------
 CSS reset
-    (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+    Is a short set of CSS rules that resets the styling of all HTML elements to a consistent baseline so the website will look the same on all browsers
 */
 
 * {
