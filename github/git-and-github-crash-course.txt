@@ -73,6 +73,11 @@ When to commit code to the server?
     -> at the end of the day (but only if the code is fully functional and has no bugs)
 
 
+Jargon Buster
+    -> fork = on the Github.com server, copy repository from one user account to another (this is done without any connection to your local computer)
+    -> clone = copy repository from your own account on the server to your own computer
+    -> pull = copy the existing code from the your repository in your online Github.com account to update the folder on your own computer
+    -> push = the code on your own computer to your repository in your online Github.com account to update
 
 
 Master and branches
