@@ -1,5 +1,7 @@
 /* Debugging strategies
 
+Example: trying to fix the remote for a TV
+
 debugging level 1 => check if JS syntax is correct (check console in Web Dev)
 --> a real life example: make sure that your TV remote has batteries
 debugging level 2 => check if the targeting is working (check the connection between the HTML element and equivalent JS functionality ==> alert("here"); inside the function)

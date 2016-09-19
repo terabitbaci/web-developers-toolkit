@@ -24,11 +24,11 @@ How to use Git
 There are 3 ways we use github:
 
 1. To create backups (this is the most often usage for it at Thinkful):
-    --> We only do that when we know that the code has no bugs or conflicts and a part of the website is complete (for example "header ready").
+--> We only do that when we know that the code has no bugs or conflicts and a part of the website is complete (for example "header ready").
 2. To test new code:
-    --> We create a new branch from the master and we call that branch the name of we want to build (lets say footer); we continue working on that branch until the footer is ready; after that we take all the code from the master, we make sure that there are no conflicts or errors, and than we push the code back to master (including the new functionality).
+--> We create a new branch from the master and we call that branch the name of we want to build (lets say footer); we continue working on that branch until the footer is ready; after that we take all the code from the master, we make sure that there are no conflicts or errors, and than we push the code back to master (including the new functionality).
 3. When multiple developers are working on the same code:
-    --> Each developer creates a new branch with the name of they want to build (let’s say one is building the login and the other the shopping chart); they keep working in their own branches until they complete the tasks; after that they take all the code from the master, we make sure that there are no conflicts or errors, and than they push the code back to master (including the new functionality).
+--> Each developer creates a new branch with the name of they want to build (let’s say one is building the login and the other the shopping chart); they keep working in their own branches until they complete the tasks; after that they take all the code from the master, we make sure that there are no conflicts or errors, and than they push the code back to master (including the new functionality).
 
 
 
@@ -40,51 +40,51 @@ How the Git works
 There are 2 main cycles:
 
 Create a new project cycle (create the repository ON the Github.com SERVER and then clone it locally)
-        github.com -> create repository
-        github.com -> clone repository on own computer using the command line or the Github Desktop UI Software
+github.com -> create repository
+github.com -> clone repository on own computer using the command line or the Github Desktop UI Software
 
 
 
 
 Daily back-up your project Cycle (commit changes and synchronize)
-        Note: Run the following command inside the repository folder
+Note: Run the following command inside the repository folder
 
-        //prepack the code
-        1) git add . ;
-            --> means add all the files in that particular folder to be pre-packed for the commit
-        2) git commit -m 'Some message for you future self explaining why is this commit important';
-            --> means commit is happening only on the local machine (no communication with the server possible); -m stand for a message (it is a message to self about the content of that commit; example: changing the header color)
+//prepack the code
+1) git add . ;
+--> means add all the files in that particular folder to be pre-packed for the commit
+2) git commit -m 'Some message for you future self explaining why is this commit important';
+--> means commit is happening only on the local machine (no communication with the server possible); -m stand for a message (it is a message to self about the content of that commit; example: changing the header color)
 
-        //send it to the server
-        3) git pull origin master;
-            --> means download all the code from the server and make sure there are no conflict with your own code
-        4) git push --set-upstream origin master;
-            --> means synchronise your own code with the server
+//send it to the server
+3) git pull origin master;
+--> means download all the code from the server and make sure there are no conflict with your own code
+4) git push --set-upstream origin master;
+--> means synchronise your own code with the server
 
 
-        All commands on one line shortcut:
-        git add . ; git commit -m 'REPLACE-ME'; git pull origin master; git push --set-upstream origin master      <---
+All commands on one line shortcut:
+git add . ; git commit -m 'REPLACE-ME'; git pull origin master; git push --set-upstream origin master      <---
 
 
 
 
 When to commit code to the server?
-    -> when a particular part of the code is completed (let's say the footer is ready) BUT make sure there are no bugs or conflicts
-    -> at the end of the day (but only if the code is fully functional and has no bugs)
+-> when a particular part of the code is completed (let's say the footer is ready) BUT make sure there are no bugs or conflicts
+-> at the end of the day (but only if the code is fully functional and has no bugs)
 
 
 Jargon Buster
-    -> fork = on the Github.com server, copy repository from one user account to another (this is done without any connection to your local computer)
-    -> clone = copy repository from your own account on the server to your own computer
-    -> pull = copy the existing code from the your repository in your online Github.com account to update the folder on your own computer
-    -> push = the code on your own computer to your repository in your online Github.com account to update
+-> fork = on the Github.com server, copy repository from one user account to another (this is done without any connection to your local computer)
+-> clone = copy repository from your own account on the server to your own computer
+-> pull = copy the existing code from the your repository in your online Github.com account to update the folder on your own computer
+-> push = the code on your own computer to your repository in your online Github.com account to update
 
 
 Master and branches
 
 -> Master (in production environment this is the live website)
-        --> branch_1 (some branch to test something)
-        --> gh-pages (in Github this is the live website)
+--> branch_1 (some branch to test something)
+--> gh-pages (in Github this is the live website)
 
 
 How to merge the Master into GH-Pages
