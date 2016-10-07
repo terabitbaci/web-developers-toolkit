@@ -5,7 +5,11 @@ var array = ['dog', 'cat', 'cow']; //array
 var object = {
     'bananas', 'oranges', 'apples'
 }; //object
-var functionName = function (parameter1, parameter2) {
+
+//function definition
+var addingNumbers = function (parameter1, parameter2) {
     var result = parameter1 + parameter2;
     return result;
-}; //function
+};
+//function usage / call
+addingNumbers(3, 4);
