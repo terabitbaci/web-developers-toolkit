@@ -1,3 +1,10 @@
+/* Debugging tools
+- console log log or alert
+- debugger code inside JS
+- web development tools + breaking points
+- for performance Web Dev tools > Network / Timeline / Audit
+*/
+
 /* Debugging strategies
 
 Example: trying to fix the remote for a TV
