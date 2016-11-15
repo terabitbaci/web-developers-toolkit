@@ -1,0 +1,12 @@
+DOM definitions
+http://www.w3schools.com/js/js_htmldom.asp
+DOM is copy of the code from the server is not the code of the server (cross browser, device and OS optimisation)
+- download all the files related to the website
+- structure the files folder - file tree
+- read the code in order to display it as web design
+- if the code has some errors, the DOM will try to interpret it (trying to fix it) in order to show valid code
+<h1 class="orange"> Some title </h1>
+<h1 class="orange"> Some title
+<h1 class="orange"> Some title </h1>
+Some title </h1>
+Some title
