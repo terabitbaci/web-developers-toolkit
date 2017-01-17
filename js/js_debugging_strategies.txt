@@ -3,6 +3,8 @@
 - debugger code inside JS
 - web development tools + breaking points
 - for performance Web Dev tools > Network / Timeline / Audit
+- use strict
+- JS Lint
 */
 
 /* Debugging strategies
