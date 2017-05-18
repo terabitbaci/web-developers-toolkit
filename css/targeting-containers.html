@@ -6,14 +6,21 @@
     <title>There are 3 ways to target a container (boxes) in CSS</title>
     <style>
         /*parent child relationship - all the children (use SPACE)*/
+        body main div {
+            color: red;
+        }
 
-        body main div {}
+
         /*parent child relationship - first child only (use >)*/
+        body main>div {
+            color: blue;
+        }
 
-        body main>div {}
+
         /*same element targeting in 2 way: using the tag (div) and the class (row) (use NOTHING)*/
-
-        div.row {}
+        div.row {
+            color: green;
+        }
     </style>
 </head>
 
