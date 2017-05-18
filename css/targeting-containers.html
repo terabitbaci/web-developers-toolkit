@@ -26,6 +26,25 @@
         main, div {
             border: 1px solid red;
         }
+
+        /*pseudo selectors*/
+        ul li:first-child{
+            color: red;
+        }
+        ul li:nth-child(3){
+            color: green;
+        }
+        ul li:last-child{
+            color: blue;
+        }
+
+        ul li::before {
+            content: "\f121";
+            font-family: FontAwesome;
+            color: green;
+            font-size: 20px;
+            margin-right: 5px;
+        }
     </style>
 </head>
 
@@ -33,6 +52,13 @@
     <main>
         <div class="row">Target me first</div>
         <div class="row">Target me after</div>
+        <ul>
+            <li>some text 1</li>
+            <li>some text 2</li>
+            <li>some text 3</li>
+            <li>some text 4</li>
+            <li>some text 5</li>
+        </ul>
     </main>
 </body>
 
