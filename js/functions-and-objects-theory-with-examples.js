@@ -51,6 +51,8 @@ alert(allOperations(number));
 
 //declaring objects
 
+//objects are combinations of variables and functions in an array like structure;
+
 var myNeighbors = {
     "firstName": "John",
     "lastName": "Doe",
