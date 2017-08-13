@@ -1,15 +1,12 @@
 ------------------------------------------
-What is Git
+What is Git?
 ------------------------------------------
 
 Git is a version control system that is widely used for software development. It is a distributed revision control system with an emphasis on speed, data integrity and support for distributed, non-linear workflows.
 Git was initially designed and developed in 2005 by Linux kernel developers (including Linus Torvalds) for Linux kernel development.
 
-
-
-
 ------------------------------------------
-What is the difference between Git and Github
+What is the difference between Git and Github?
 ------------------------------------------
 
 Git is the system, Github is the interface to that system. The Git is like engine in a car and Github is the dashboard.
@@ -19,10 +16,8 @@ Apart from Github, you can also control Git using command line or Github Desktop
     3. github.com is website specialised in the collaborative (multiple user collaborate in the same code) part of the git
 
 ------------------------------------------
-How to use Git
+What is Git used for?
 ------------------------------------------
-
-There are 3 ways we use github:
 
     1. To create backups (this is the most often usage for it at Thinkful):
         --> We only do that when we know that the code has no bugs or conflicts and a part of the website is complete (for example "header ready").
@@ -31,11 +26,8 @@ There are 3 ways we use github:
     3. When multiple developers are working on the same code:
         --> Each developer creates a new branch with the name of they want to build (let’s say one is building the login and the other the shopping chart); they keep working in their own branches until they complete the tasks; after that they take all the code from the master, we make sure that there are no conflicts or errors, and than they push the code back to master (including the new functionality).
 
-
-
-
 ------------------------------------------
-How the Git works
+How Git works?
 ------------------------------------------
 
 There are 2 main cycles:
@@ -52,7 +44,7 @@ There are 2 main cycles:
 
 
 
-    2. Daily-Back-Up-Your-Project Cycle (commit changes and synchronize)
+2. Daily-Back-Up-Your-Project Cycle (commit changes and synchronize)
         Note: Run the following command inside the repository folder
 
         //prepack the code
@@ -67,7 +59,7 @@ There are 2 main cycles:
         d) git push --set-upstream origin master;
         --> means synchronise your own code with the server
 
-        All commands on one line shortcut:
+    All commands on one line shortcut:
         git add . ; git commit -m 'REPLACE-ME'; git pull origin master; git push --set-upstream origin master      <---
 
 
