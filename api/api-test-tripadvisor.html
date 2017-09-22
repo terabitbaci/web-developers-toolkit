@@ -8,9 +8,12 @@
     <script type="text/javascript">
         $(document).ready(function() {
 
-            //tripadvisor.com Api Documentation
+            //tripadvisor.com Api Documentation (NOT AVAILABLE for Academic projects)
+
+            // NOTE the TripAdvisor Content API is intended for consumer-facing (B2C) websites & apps only.
+
             // https://developer-tripadvisor.com/content-api/documentation/location/
-            //https://developer-tripadvisor.com/content-api/documentation/location_mapper/
+            // https://developer-tripadvisor.com/content-api/documentation/location_mapper/
 
 
             // encodeURIComponent() Function This function encodes special characters. In addition, it encodes the following characters: , / ? : @ & = + $ #
@@ -18,9 +21,7 @@
 
 
             // In this example, if you make an ajax request to the following website
-            //            var myUrl = 'http://www.geoplugin.net/json.gp?ip=216.58.209.68';
             var myUrl = 'http://api.tripadvisor.com/api/partner/2.0/map/89575/attractions?key=89DE2CFC0C1C43978B484B55F9A514EC';
-            //  But if you make it from a browser, then it will work without problem ...
 
             // However to make it work, we are going to use the cors-anywhere free service to bypass this
             var proxy = 'https://cors-anywhere.herokuapp.com/';
