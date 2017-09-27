@@ -1,5 +1,5 @@
 /* Debugging tools
-- console log log or alert
+- console log or alert
 - debugger code inside JS
 - web development tools + breaking points
 - for performance Web Dev tools > Network / Timeline / Audit
