@@ -2,8 +2,10 @@
 What is Git?
 ------------------------------------------
 
-Git is a version control system that is widely used for software development. It is a distributed revision control system with an emphasis on speed, data integrity and support for distributed, non-linear workflows.
+Git (Global Information Tracker) is a version control system that is widely used for software development. It is a distributed revision control system with an emphasis on speed, data integrity and support for distributed, non-linear workflows.
 Git was initially designed and developed in 2005 by Linux kernel developers (including Linus Torvalds) for Linux kernel development.
+
+git (British informal noun) = an unpleasant or contemptible person (example "that mean old git")
 
 ------------------------------------------
 What is the difference between Git and Github?
