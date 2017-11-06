@@ -9,7 +9,7 @@ Basic rules to write CSS
 
 /* -------------------------------------
 CSS reset
-    Is a short set of CSS rules that resets the styling of all HTML elements to a consistent baseline so the website will look the same on all browsers
+Is a short set of CSS rules that resets the styling of all HTML elements to a consistent baseline so the website will look the same on all browsers
 */
 
 * {
@@ -19,7 +19,6 @@ CSS reset
     font-size: 100%;
     /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
     box-sizing: border-box;
-
     /*reset Chrome user agent styles*/
     -webkit-margin-before: 0px;
     -webkit-margin-after: 0px;
@@ -29,7 +28,6 @@ CSS reset
     -webkit-padding-after: 0px;
     -webkit-padding-start: 0px;
     -webkit-padding-end: 0px;
-
     /*reset Firefox user agent styles*/
     -moz-margin-before: 0px;
     -moz-margin-after: 0px;
@@ -39,7 +37,6 @@ CSS reset
     -moz-padding-after: 0px;
     -moz-padding-start: 0px;
     -moz-padding-end: 0px;
-
     /*reset Internet Explorer user agent styles*/
     -ms-margin-before: 0px;
     -ms-margin-after: 0px;
@@ -49,7 +46,6 @@ CSS reset
     -ms-padding-after: 0px;
     -ms-padding-start: 0px;
     -ms-padding-end: 0px;
-
     /*reset Opera user agent styles*/
     -o-margin-before: 0px;
     -o-margin-after: 0px;
@@ -63,8 +59,8 @@ CSS reset
 
 
 /* -------------------------------------
-General styles (General Module, wrapping around the modules bellow)
-    (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+General styles (General Module, wrapping around the modules below)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
 body {}
@@ -72,19 +68,19 @@ body {}
 
 /* -------------------------------------
 Header styles (Main Module)
-    (all the styles inside the < header > or < nav > tags)
+(all the styles inside the < header > or < nav > tags)
 */
 
 
 /* -------------------------------------
 Content styles (Main Module)
-    (all the styles inside the < sections > or < aside > tags)
+(all the styles inside the < sections > or < aside > tags)
 */
 
 
 /* -------------------------------------
 Footer styles (Main Module)
-    (all the styles inside the < footer > tag)
+(all the styles inside the < footer > tag)
 */
 
 
@@ -92,7 +88,7 @@ Footer styles (Main Module)
 place all the desktop styles above this line
 
 Responsive styles
-    (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 
-place all the mobile tables styles bellow this line
+place all the mobile tables styles below this line
 */

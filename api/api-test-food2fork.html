@@ -6,7 +6,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
             /*function to sanitize the JSON if it is necesary*/
             function sanitizeJSON(unsanitized) {
                 var str = JSON.stringify(unsanitized);
@@ -19,21 +19,26 @@
             */
             /* Update all the parameters for your API test*/
             var params = {
-                q: 'pork',
+                q: 'chicken',
                 key: 'd48fb246d87e5aa80bfb9aa7d21cfe84'
             };
             var result = $.ajax({
                     /* update API end point */
                     url: "http://food2fork.com/api/search",
+                    //                    url: "http://food2fork.com/api/search?key=d48fb246d87e5aa80bfb9aa7d21cfe84&q=shredded%20chicken",
                     data: params,
                     dataType: "jsonp",
                     /*set the call type GET / POST*/
                     type: "GET"
                 })
                 /* if the call is successful (status 200 OK) show results */
-                .done(function (result) {
+                .done(function(result) {
                     /* if the results are meeningful, we can just console.log them */
                     console.log(result);
+                    console.log(sanitizeJSON(result));
+                    console.log(JSON.stringify(result));
+
+
                     /* if the results are not meeningful, it might help to convert them to string first
                     var displayStringifiedResults = JSON.stringify(result);
                     console.log(displayStringifiedResults);*/
@@ -42,12 +47,13 @@
                     console.log(displaySanitizedResults);*/
                 })
                 /* if the call is NOT successful show errors */
-                .fail(function (jqXHR, error, errorThrown) {
+                .fail(function(jqXHR, error, errorThrown) {
                     console.log(jqXHR);
                     console.log(error);
                     console.log(errorThrown);
                 });
         });
+
     </script>
 
 </head>

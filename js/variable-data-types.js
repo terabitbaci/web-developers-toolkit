@@ -38,8 +38,8 @@ The functions are a set of instructions ready to be reused multiple times (is a 
 
  function components:
  -- function name (ex: "addingNumbers") (example: like a the recipe title)
- -- input parameters (ex: "parameter1", "parameter2") (example: like a set of ingredients in a recipe)
- -- output parameters (ex: "result") (example: like the description of what dish gets cooked from that recipe)
+ -- input parameters or arguments (ex: "parameter1", "parameter2") (example: like a set of ingredients in a recipe)
+ -- output parameters or arguments (ex: "result") (example: like the description of what dish gets cooked from that recipe)
  -- some set of instructions to convert the imput parameters into output (ex: "var result = parameter1 + parameter2;") (example: like the steps to cook the ingredients to create a dish in a recipe)
 
 function definition:
@@ -57,5 +57,7 @@ addingNumbers(2, 9); //result is 11
 
 //object
 var object = {
-    'bananas', 'oranges', 'apples'
+    'bananas',
+    'oranges',
+    'apples'
 };
