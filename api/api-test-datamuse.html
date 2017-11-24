@@ -2,19 +2,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Api Stack Overflow</title>
+    <title>datamuse api test</title>
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
-
-
-            /*function to sanitize the JSON if it is necesary*/
-            function sanitizeJSON(unsanitized) {
-                var str = JSON.stringify(unsanitized);
-                var output = str.replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t").replace(/\f/g, "\\f").replace(/"/g, "\\\"").replace(/'/g, "\\\'").replace(/\&/g, "\\&");
-                return output;
-            }
 
 
             /*
@@ -31,11 +23,11 @@
                 order: 'desc',
                 sort: 'creation'
             };
-
+            //NOTE: if the URL has special characters like ?? it will not work
             var result = $.ajax({
                     /* update API end point */
                     url: "https://api.datamuse.com/words?sl=elefint",
-                    data: params,
+                    //                    data: params,
                     dataType: "json",
                     /*set the call type GET / POST*/
                     type: "GET"
@@ -46,13 +38,7 @@
                     /* if the results are meeningful, we can just console.log them */
                     console.log(result);
 
-                    /* if the results are not meeningful, it might help to convert them to string first
-                    var displayStringifiedResults = JSON.stringify(result);
-                    console.log(displayStringifiedResults);*/
 
-                    /* if the results contain invalid json, it might help to sanitize them first
-                    var displaySanitizedResults = sanitizeJSON(result);
-                    console.log(displaySanitizedResults);*/
 
                 })
 
