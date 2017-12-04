@@ -1,5 +1,6 @@
 .DS_Store
 
-ted-talks-about-learning/large-videos/
 *.part
 books
+
+big-o-notation-for-interviews
