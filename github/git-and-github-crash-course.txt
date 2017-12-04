@@ -96,3 +96,11 @@ How to merge the Master into GH-Pages
     git checkout gh-pages
     git merge master
     git push origin gh-pages
+
+
+If you need to re-initialize the repository, from command line (terminal) navigate to the repository folder and:
+    --> list all the files and folders in the repo folder (including the hidden ones)
+    ls -a
+    --> delete the hidden .git folder
+    rm -rf .git
+    --> then run the steps in the Create-a-New-Project Cycle above
