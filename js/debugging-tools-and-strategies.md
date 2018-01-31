@@ -1,0 +1,28 @@
+## Debugging tools
+* console log or alert
+* debugger code inside JS
+* web development tools + breaking points
+* for performance Web Dev tools > Network / Timeline / Audit
+* use strict
+* JS Lint
+
+
+## Debugging strategies
+
+Example: trying to fix the remote for a TV
+
+* debugging level 1 => check if JS syntax is correct (check console in Web Dev)
+    * --> a real life example: make sure that your TV remote has batteries
+* debugging level 2 => check if the targeting is working (check the connection between the HTML element and equivalent JS functionality ==> alert("here"); inside the function)
+    * --> a real life example: make sure that your remote connects to your own TV
+* debugging level 3 => check if the logic makes sense (check if the JS functionality returns what we expect ==> alert(VALUE-NAME); inside the function)
+    * --> a real life example: make sure that when you click on the volume up button on your remote, you don't get to change channels or similar
+
+
+## Other debugging strategies
+
+* Check the logic inside the functions and objects (variable definitions, ifs, loops, etc. )
+
+* Check the variable, object flow between the functions
+
+* Check the Big-O complexity
