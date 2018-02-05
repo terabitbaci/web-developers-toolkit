@@ -11,7 +11,7 @@ const MyData = {
 
 
 
-console.log('use a For to loop through the OBJECT and console the contents');
+console.log('use a for...in to loop through the OBJECT and console the contents');
 
 
 for (let key in MyData) {
@@ -26,7 +26,12 @@ console.log('- - - - - - - - - -');
 
 console.log('use a forEach to loop through the OBJECT and console the contents');
 
-Object.keys(MyData).forEach(key => console.log(`${key}: ${MyData[key]}`));
+//The Object.keys() method returns an array of a given object's own enumerable properties, in the same order as that provided by a for...in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).
+//(please see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
+let convertObjectKeysToAnArray = Object.keys(MyData);
+
+//.forEach() is only for arrays (please see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+convertObjectKeysToAnArray.forEach(key => console.log(`${key}: ${MyData[key]}`));
 
 console.log('- - - - - - - - - -');
 
@@ -47,6 +52,6 @@ let contents = {
 
 console.log('objects inside object --> return 33');
 
-console.log(`${contents.rings.washer}`);
+console.log(contents.rings.washer);
 
 console.log('- - - - - - - - - -');
