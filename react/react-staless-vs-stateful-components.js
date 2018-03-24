@@ -33,7 +33,7 @@ class Profile extends Component {
 
     _toggleLikeState = () => {
         this.setState({
-            isLiked: this.state.isLiked
+            isLiked: !this.state.isLiked
         });
     }
 
