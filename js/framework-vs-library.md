@@ -1,6 +1,6 @@
 # JavaScript framework vs library
 
-#### This question is highly subjective but the simple answee would be:
+#### This question is highly subjective but the simple answer would be:
 
 * A framework imposes structure upon your code in order to address a particular problem and a library is a generic set of tools that aid you in various tasks, without necessarily addressing the same problem.
 
@@ -12,7 +12,7 @@
 * Library: Is an entire toolkit which highly abstracts different layers, like browsers / DOM models / etc. Also as a good toolkit, it offers a lot of tools and neat stuff to work with, which in general, simplify your coding experience. Examples "jQuery", "MooTools", "YUI"
 
 
-#### Example:
+#### Examples:
 
 * jQuery is a library because it abstracts a lot of browser incompatibilities but imposes no structure on your code.
 * underscore.js is a library because it's a collection of utilities to manipulate data structures and other goodies.
