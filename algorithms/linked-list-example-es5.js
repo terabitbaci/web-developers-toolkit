@@ -67,21 +67,30 @@ var list = function (e) {
     return self;
 };
 
-var list = new list();
-list.insert(1);
-list.insert(2);
-list.insert(3);
-list.insert(4);
-
-list.show();
+//add new elements in the list
+var exampleList = new list();
+exampleList.insert(1);
+exampleList.insert(2);
+exampleList.insert(3);
+exampleList.insert(4);
+//show the list with the new elements in the list
+exampleList.show();
 console.log("____________________________");
 
-list.update(2, 5);
-list.show();
+
+
+//updated the second element and make it 5
+exampleList.update(2, 5);
+//show the list with updated element
+exampleList.show();
 console.log("____________________________");
 
-list.remove(3);
-list.show();
+
+
+//remove the 3 element in the list
+exampleList.remove(3);
+//show the list without the removed element
+exampleList.show();
 
 
 
@@ -103,17 +112,20 @@ List.prototype = {
         Method: makeNode
         Make a simple Node object
     */
-    makeNode : function() {
-        return {data: null, next: null};
+    makeNode: function () {
+        return {
+            data: null,
+            next: null
+        };
     },
 
     /*
         Method: addAtEnd
         Adds a Node to the END of the List
     */
-    addAtEnd: function(data) {
+    addAtEnd: function (data) {
         // if linkedList is empty
-        if(this.start === null) {
+        if (this.start === null) {
             // start becomes a node
             this.start = this.makeNode();
             // end becomes the start node
@@ -135,25 +147,25 @@ List.prototype = {
         Traverse the list. For each node, append the current node's data to
         a master list of all data, including head and tail
     */
-    print: function() {
+    print: function () {
         var listString = 'Head -> ';
         // set our 'current' Node to the starting node
         var current = this.start;
         // while the 'current' Node isn't null
-        while(current !== null) {
+        while (current !== null) {
             // print out the 'current' Node's data
             listString += current.data + ' -> ';
             // assign our 'current' Node's next to be 'current' (increment!)
             current = current.next;
         }
-        console.log(listString +'Tail');
+        console.log(listString + 'Tail');
     },
 
     /*
         Method: insertAtHead
         Insert a new Node at the head of the list.
     */
-    insertAtHead: function(data) {
+    insertAtHead: function (data) {
         var temp = this.makeNode();
         temp.data = data;
         temp.next = this.start;
@@ -165,10 +177,10 @@ List.prototype = {
         Traverse the list. Return the amount of Nodes in the list.
     */
 
-    length: function() {
+    length: function () {
         var current = this.start;
         var i = 0;
-        while(current !== null) {
+        while (current !== null) {
             i++;
             current = current.next;
         }
@@ -180,13 +192,13 @@ List.prototype = {
         Traverse the list. If a Node with the data passed in exists, then return
         true. If not, return false
     */
-    exists: function(data) {
+    exists: function (data) {
         // start our node at the start of the list
         var node = this.start;
         // loops through list until node === null
-        while(node !== null){
+        while (node !== null) {
             // conditional check for data match
-            if(data === node.data){
+            if (data === node.data) {
                 return true;
             }
             // increment our node
@@ -200,9 +212,9 @@ List.prototype = {
         Traverse the list. For each Node, call the function f on that Node.
         Example: f(current);
     */
-    each: function(f) {
+    each: function (f) {
         var node = this.start;
-        while(node !== null) {
+        while (node !== null) {
             f(node);
             node = node.next;
         }
@@ -213,10 +225,10 @@ List.prototype = {
         Traverse the list. If a Node with the data passed is found, return an
          index (integer) of that Node's location.
     */
-    indexOf: function(data) {
+    indexOf: function (data) {
         var node = this.start;
         var i = 0;
-        while(node !== null) {
+        while (node !== null) {
             if (node.data === data) {
                 return i;
             } else {
@@ -231,12 +243,12 @@ List.prototype = {
         Method: dataFrom
         Traverse the list to the ith position and return the corresponding data.
    */
-    dataFrom: function(i) {
+    dataFrom: function (i) {
         // Enter code here!
         var node = this.start;
         var index = 0;
-        while(node !== null){
-            if (index === i){
+        while (node !== null) {
+            if (index === i) {
                 return node.data;
             } else {
                 node = node.next;
@@ -250,23 +262,23 @@ List.prototype = {
         Traverse the List.  Find the ith Node in the list and insert a new Node
          after it.  You must preserve the list structure!
     */
-    insertAt: function(i, data){
+    insertAt: function (i, data) {
         // var previousNode;
         var newNode = this.makeNode();
         newNode.data = data;
         var current = this.start;
         var index = 0;
-        if(i > this.length() + 1){
+        if (i > this.length() + 1) {
             return "index out of range";
         }
-        if(i === 0){
+        if (i === 0) {
             this.insertAtHead(data);
         }
-        while(current !== null){
-            if(index === i - 1){
+        while (current !== null) {
+            if (index === i - 1) {
                 newNode.next = current.next;
                 current.next = newNode;
-                if(i === this.length() - 1){
+                if (i === this.length() - 1) {
                     this.end = newNode;
                 }
                 return "inserted";
@@ -282,13 +294,13 @@ List.prototype = {
         and remove that node. List must still be fully intact after
         you remove the node!
     */
-    delete: function(data) {
+    delete: function (data) {
         // Enter code here!
-        if (LinkedList.exists(data)){
+        if (LinkedList.exists(data)) {
             var current = this.start;
             var previous = null;
-            while(current !== null){
-                if(current.data !== data){
+            while (current !== null) {
+                if (current.data !== data) {
                     previous = current;
                     current = current.next;
                 } else {
@@ -307,9 +319,9 @@ List.prototype = {
 var LinkedList = new List();
 /* We're creating our "base" linkedList */
 var i = 2;
-while(i <= 20) {
+while (i <= 20) {
     LinkedList.addAtEnd(i);
-    i+=2;
+    i += 2;
 }
 /* print */
 console.log("Before:");

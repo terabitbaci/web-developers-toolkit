@@ -69,21 +69,30 @@ let list = function (e) {
     return self;
 };
 
-let list = new list();
-list.insert(1);
-list.insert(2);
-list.insert(3);
-list.insert(4);
-
-list.show();
+//add new elements in the list
+let exampleList = new list();
+exampleList.insert(1);
+exampleList.insert(2);
+exampleList.insert(3);
+exampleList.insert(4);
+//show the list with the new elements in the list
+exampleList.show();
 console.log("____________________________");
 
-list.update(2, 5);
-list.show();
+
+
+//updated the second element and make it 5
+exampleList.update(2, 5);
+//show the list with updated element
+exampleList.show();
 console.log("____________________________");
 
-list.remove(3);
-list.show();
+
+
+//remove the 3 element in the list
+exampleList.remove(3);
+//show the list without the removed element
+exampleList.show();
 
 
 
