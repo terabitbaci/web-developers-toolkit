@@ -12,7 +12,6 @@ let list = function (e) {
     let first;
     //last element in the list
     let last;
-
     //current element in the list
     let head;
 
