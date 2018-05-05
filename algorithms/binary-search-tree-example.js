@@ -37,13 +37,14 @@ class BinarySearchTree {
 
         // root is null then node will
         // be added to the tree and made root.
-        if (this.root === null)
+        if (this.root === null) {
             this.root = newNode;
-        else
+        } else {
 
             // find the correct position in the
             // tree and add the node
             this.insertNode(this.root, newNode);
+        }
     }
 
     // Method to insert a node in a tree
@@ -56,24 +57,24 @@ class BinarySearchTree {
             // if left is null insert node here
             if (node.left === null)
                 node.left = newNode;
-            else
-
+            else {
                 // if left is not null recurr until
                 // null is found
                 this.insertNode(node.left, newNode);
+            }
         }
 
         // if the data is more than the node
         // data move right of the tree
         else {
             // if right is null insert node here
-            if (node.right === null)
+            if (node.right === null) {
                 node.right = newNode;
-            else
-
+            } else {
                 // if right is not null recurr until
                 // null is found
                 this.insertNode(node.right, newNode);
+            }
         }
     }
 
@@ -100,8 +101,9 @@ class BinarySearchTree {
 
         // if the root is null then tree is
         // empty
-        if (node === null)
+        if (node === null) {
             return null;
+        }
 
         // if data to be delete is less than
         // roots data then move to left subtree
@@ -153,10 +155,11 @@ class BinarySearchTree {
     findMinNode(node) {
         // if left of a node is null
         // then it must be minimum node
-        if (node.left === null)
+        if (node.left === null) {
             return node;
-        else
+        } else {
             return this.findMinNode(node.left);
+        }
     }
 
 
@@ -169,23 +172,26 @@ class BinarySearchTree {
     // search(data) – It searches the node with a value data in the entire tree.
     search(node, data) {
         // if trees is empty return null
-        if (node === null)
+        if (node === null) {
             return null;
+        }
 
         // if data is less than node's data
         // move left
-        else if (data < node.data)
+        else if (data < node.data) {
             return this.search(node.left, data);
-
+        }
         // if data is less than node's data
         // move left
-        else if (data > node.data)
+        else if (data > node.data) {
             return this.search(node.right, data);
-
+        }
         // if data is equal to the node data
         // return node
-        else
+        else {
             return node;
+
+        }
     }
 
     /********** transversing the tree *************************************************************/
