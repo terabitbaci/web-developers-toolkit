@@ -3,7 +3,7 @@
 
 //create a linked list object
 let list = function (e) {
-    //self is the global this to be used to refer methods (this is used to refer to the elements inside methods)
+    //"self" is the global "this" to be used for all methods; the local "this"-es are to be used inside each method
     const self = this;
 
     //define key elements...
