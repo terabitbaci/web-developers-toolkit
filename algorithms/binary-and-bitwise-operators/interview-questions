@@ -37,5 +37,7 @@
 
 /* What is the general rule for binary numbers which are or the form 2^n or 2^n - 1? */
 
--For 2^n you would just have a '1' followed by 'n' zeros. (Example: 2^3 = 8 ---converted-to-binary---> 1000)
--For 2^n - 1 you would have 'n' ones. (Example: 2^3 - 1 = 7 ---converted-to-binary---> 111)
+- For 2^n ==== converted to binary is ====> 1 followed by n zeros (0) (Example: 2^3 = 8 ==== converted to binary is ====> 00001000)
+- For ((2^n)-1) ==== converted to binary is ====> n ones (1) (Example: ((2^3)-1) = 7 ==== converted to binary is ====> 00000111)
+
+More details: https://www.binaryhexconverter.com/decimal-to-binary-converter
