@@ -29,7 +29,7 @@
  @end
  =====================================================================
  */
-var HashMap = function () {
+let HashMap = function () {
     this.initialize();
 }
 
@@ -52,10 +52,10 @@ HashMap.prototype = {
    maps value to key returning previous assocciation
    */
     put: function (key, value) {
-        var prev;
+        let prev;
 
         if (key && value) {
-            var hashCode;
+            let hashCode;
             if (typeof (key) === "number" || typeof (key) === "string") {
                 hashCode = key;
             } else {
@@ -76,9 +76,9 @@ HashMap.prototype = {
    returns value associated with given key
    */
     get: function (key) {
-        var value;
+        let value;
         if (key) {
-            var hashCode;
+            let hashCode;
             if (typeof (key) === "number" || typeof (key) === "string") {
                 hashCode = key;
             } else {
@@ -95,16 +95,16 @@ HashMap.prototype = {
    Returns true if the assocciation existed, false otherwise
    */
     del: function (key) {
-        var success = false;
+        let success = false;
         if (key) {
-            var hashCode;
+            let hashCode;
             if (typeof (key) === "number" || typeof (key) === "string") {
                 hashCode = key;
             } else {
                 hashCode = key[this.hashcodeField()];
             }
             if (hashCode) {
-                var prev = this.backing_hash[hashCode];
+                let prev = this.backing_hash[hashCode];
                 this.backing_hash[hashCode] = undefined;
                 if (prev !== undefined) {
                     key[this.hashcodeField()] = undefined; //let's clean the key object
@@ -121,7 +121,7 @@ HashMap.prototype = {
    @ returns the HashMap (so we can chain)                                                                  (
    */
     each: function (callback, args) {
-        var key;
+        let key;
         for (key in this.backing_hash) {
             if (callback.call(this.backing_hash[key][1], this.backing_hash[key][0], this.backing_hash[key][1]) === false)
                 break;
@@ -139,26 +139,26 @@ HashMap.prototype = {
 
 // creation
 
-var my_map = new HashMap();
+let my_map = new HashMap();
 
 // insertion
 
-var a_key = {};
-var a_value = {
+let a_key = {};
+let a_value = {
     struct: "structA"
 };
-var b_key = {};
-var b_value = {
+let b_key = {};
+let b_value = {
     struct: "structB"
 };
-var c_key = {};
-var c_value = {
+let c_key = {};
+let c_value = {
     struct: "structC"
 };
 
 my_map.put(a_key, a_value);
 my_map.put(b_key, b_value);
-var prev_b = my_map.put(b_key, c_value);
+let prev_b = my_map.put(b_key, c_value);
 
 // retrieval
 
@@ -174,9 +174,9 @@ if (prev_b !== b_value) {
 
 // deletion
 
-var a_existed = my_map.del(a_key);
-var c_existed = my_map.del(c_key);
-var a2_existed = my_map.del(a_key);
+let a_existed = my_map.del(a_key);
+let c_existed = my_map.del(c_key);
+let a2_existed = my_map.del(a_key);
 
 if (a_existed !== true) {
     throw ("fail4")
@@ -190,7 +190,7 @@ if (a2_existed !== false) {
 
 
 // primitive types keys
-var d_value = {
+let d_value = {
     struct: "structD"
 };
 my_map.put(1, d_value);

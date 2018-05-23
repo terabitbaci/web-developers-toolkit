@@ -11,7 +11,7 @@ class Node {
     }
 }
 
-// Binary Search tree class which contains a private variable root which holds the root of a tree, it is initialized to null.
+// Binary Search tree class which contains a private letiable root which holds the root of a tree, it is initialized to null.
 class BinarySearchTree {
     constructor() {
         // root of a binary seach tree
@@ -33,7 +33,7 @@ class BinarySearchTree {
     insert(data) {
         // Creating a node and initailising
         // with data
-        var newNode = new Node(data);
+        let newNode = new Node(data);
 
         // root is null then node will
         // be added to the tree and made root.
@@ -140,7 +140,7 @@ class BinarySearchTree {
             // Deleting node with two children
             // minumum node of the rigt subtree
             // is stored in aux
-            var aux = this.findMinNode(node.right);
+            let aux = this.findMinNode(node.right);
             node.data = aux.data;
 
             node.right = this.removeNode(node.right, aux.data);
@@ -255,7 +255,7 @@ class BinarySearchTree {
 
 
 // create an object for the BinarySearchTree
-var BST = new BinarySearchTree();
+let BST = new BinarySearchTree();
 
 // Inserting nodes to the BinarySearchTree
 BST.insert(15);
@@ -277,7 +277,7 @@ BST.insert(27);
 //     / \    /
 //    5   9  17
 
-var root = BST.getRootNode();
+let root = BST.getRootNode();
 
 // prints 5 7 9 10 13 15 17 22 25 27
 BST.inorder(root);
@@ -295,7 +295,7 @@ BST.remove(5);
 //        9  17
 
 
-var root = BST.getRootNode();
+let root = BST.getRootNode();
 
 // prints 7 9 10 13 15 17 22 25 27
 BST.inorder(root);
@@ -312,7 +312,7 @@ BST.remove(7);
 //           17
 
 
-var root = BST.getRootNode();
+let root = BST.getRootNode();
 
 // prints 9 10 13 15 17 22 25 27
 BST.inorder(root);
@@ -326,13 +326,14 @@ BST.remove(15);
 //       / \   / \
 //      9  13 22  27
 
-var root = BST.getRootNode();
-console.log("inorder traversal");
-
+let root = BST.getRootNode();
 // prints 9 10 13 17 22 25 27
+
+console.log("inorder traversal");
 BST.inorder(root);
 
 console.log("postorder traversal");
 BST.postorder(root);
+
 console.log("preorder traversal");
 BST.preorder(root);
