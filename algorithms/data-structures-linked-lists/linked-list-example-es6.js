@@ -48,21 +48,7 @@ let list = function (e) {
         }
     }
 
-    //return the amount of Nodes in the list
-    self.size = () => {
-        //head = first means that we start from the beginning of the list
-        let head = first;
-        //define the counter
-        let i = 0;
-        //if next element is not null continue through the list
-        while (head != null) {
-            //increment the counter
-            i++;
-            head = head.next;
-        }
-        //increment the counter
-        console.log(i);
-    }
+
 
     // remove a value method (find a value and remove it)
     self.remove = value => {
@@ -116,6 +102,38 @@ let list = function (e) {
         }
     }
 
+    //return the amount of Nodes in the list
+    self.size = () => {
+        //head = first means that we start from the beginning of the list
+        let head = first;
+        //define the counter
+        let i = 0;
+        //if next element is not null continue through the list
+        while (head != null) {
+            //increment the counter
+            i++;
+            head = head.next;
+        }
+        //display results
+        console.log(i);
+    }
+
+    self.findMiddle = () => {
+        //define the slow pointer the one going one element at a time
+        let slow = first;
+        //define the fast pointer the one going 2 elements at a time
+        let fast = first;
+
+        while (fast !== null && head.next !== null) {
+            //parse the linked list 2 elements at a time
+            fast = head.next.next;
+            //parse the linked list one element at a time
+            slow = head.next;
+        }
+        //by the time the fast pointer is reaching the end of the list the slow one is in the middle
+        console.log(slow.data);
+    }
+
     //defines the value that needs to be changed
     let Node = function (value) {
         //this is referring to this Node, to the value that needs to be changed
@@ -145,7 +163,9 @@ exampleList.show();
 console.log("----> show the size in the list");
 exampleList.size();
 
-
+//show the size in the list
+console.log("----> find the middle of the linked list");
+exampleList.findMiddle();
 
 
 //updated the second element and make it 5
