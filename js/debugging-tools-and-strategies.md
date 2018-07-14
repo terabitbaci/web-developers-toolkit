@@ -18,16 +18,14 @@
 
 
 ## Debugging strategies
-* debugging level 1 => check if JS syntax is correct (check console in Web Dev)
-* debugging level 2 => check if the targeting is working (check the connection between the HTML element and equivalent JS functionality ==> alert("here"); inside the function)
-* debugging level 3 => check if the logic makes sense (check if the JS functionality returns what we expect ==> alert(VALUE-NAME); inside the function)
-
-Example: trying to fix the remote for a TV
-    * --> make sure that your TV remote has batteries
-    * --> make sure that your remote connects to your own TV
-    * --> make sure that when you click on the volume up button on your remote, you don't get to change channels or similar
-
-## Other debugging strategies
-* Check the logic inside the functions and objects (variable definitions, ifs, loops, etc. )
-* Check the data flow between the code elements (functions / objects / components)
-* Check the Big-O complexity (https://en.wikipedia.org/wiki/Big_O_notation)
+1. check if there are any syntax errors in the Web Development Tools => Console
+2. check if the connection between the HTML elements and jQuery triggers are working by placing a console.log("here") inside the trigger;
+3. check if the jQuery trigger connects to the corresponding function by placing console.log("here") inside the function
+4. check if for jQuery nested triggers and avoid them
+5. check if the data submitted by the html forms is the same with the data received inside the the function using (console log the relevant data)
+6. check if every function definition has at least one function usage associated to it
+7. check if data flows between cascading functions by console log the input paramenters after the first line in the function and the value of output just before the return in the same function
+8. check if the "if" statements are true by placing console.log("here") inside them or console log the comparison items before the "if"
+9. check if the "while" are counting towards the limit to avoid infinite loops
+10. check if the "for" loops are counting by placing console.log("here") inside them
+11. check if existing code can be scaled up for large volumes (for example login 1000 users per second) by verifying the Big-O complexity (https://en.wikipedia.org/wiki/Big_O_notation)
