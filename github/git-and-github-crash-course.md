@@ -41,16 +41,19 @@ There are 2 main cycles:
         Note: Run the following command inside the repository folder
 
     * add all the files in that particular folder to be pre-packed for the commit
-> git add . ;
+    > git add . ;
+
     * commit is happening only on the local machine (no communication with the server possible); -m stand for a message (it is a message to self about the content of that commit; example: changing the header color)
-> git commit -m 'Some message for you future self explaining why is this commit important';
+    > git commit -m 'Some message for you future self explaining why is this commit important';
+
     * download all the code from the server and make sure there are no conflict with your own code
->git pull origin master;
+    >git pull origin master;
+
     * synchronise your own code with the server
->git push --set-upstream origin master;
+    >git push --set-upstream origin master;
 
     * All commands on one line shortcut:
-> git add . ; git commit -m 'REPLACE-ME'; git pull origin master; git push --set-upstream origin master
+    > git add . ; git commit -m 'REPLACE-ME'; git pull origin master; git push --set-upstream origin master
 
 
 ## Common Git command lines
