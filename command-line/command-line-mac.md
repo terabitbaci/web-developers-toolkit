@@ -1,27 +1,39 @@
 ## Command Line Basics
-* Change folder
+1. Change directory (folder)
 >`cd`
-* Go one folder up
+
+2. Go one directory (folder) up
 >`cd ..`
-* Go to the home folder
+
+3. Go to the home directory (folder)
 > `cd ~`
-* Go to the root of the current hard drive
+
+4. Go to the root of the current hard drive
 > `cd /`
-* Print working folder
+
+5. Print working directory (folder)
 > `pwd`
-* List files of current folder
+
+6. List files of current directory (folder)
 > `ls`
-* List files of current directory including the hidden ones
+
+7. List files of current directory (folder) including the hidden ones
 > `ls -a`
-* Make a new folder
+
+8. Make a new directory (folder)
 > `mkdir`
-* Create a file
+
+9. Create a file
 > `touch`
-* Delete a file (NOTE: There is NO undo, "Are you sure?" or trash functionality)
+
+10. Delete a file (NOTE: There is NO undo, "Are you sure?" or trash functionality)
 > `rm`
-* Delete a folder
+
+11. Delete a directory (folder)
 > `rmdir`
-* Move a file
+
+12. Move a file
 > `mv`
-* Copy a file
+
+13. Copy a file
 > `cp`
