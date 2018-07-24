@@ -1,8 +1,0 @@
-ls = show files in the current folder
-cd = change directory (folder)
-cd .. = go one folder up
-cd ~ = go to your home folder
-cd / = go to the root of your current hard drive
-mkdir folder-name = create a new folder
-touch file-name.extension = create a new file
-rm file-name.extension = delete a file or a folder (NOTE: There is NO undo, "Are you sure?" or trash functionality)
