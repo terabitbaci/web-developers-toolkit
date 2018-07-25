@@ -1,29 +1,44 @@
 # API capstone steps
 
-## Create a Proof of Concept (Minimum Viable Product)
-* come up with useful idea for the capstone
-* find the APIs to support it
-* test that the APIs are working in Ajax and that they are returning the relevant data
+1. Create a Proof of Concept
 
-## Create the Minimum Viable Product (MVP)
-* create a Github repository (on the Github server) with a name like this: [name-of-the-project] + [name-of-the-used-apis] + "capstone"; the name will contain only lower case letters and dashes (-) between the words
-* clone locally in order to create the local folder
-* in this folder we will create a blank index.html file; styles.css file; app.js file
-* in index.html will create the links to the styles.css and the app.js
-* in the same folder will create an empty readme file
-* follow the Thinkful course part about the wireframes and user cases
-* create the html and css look and feel to the height of detail possible without javascript
-* create the JS functionality (will integrate the API tests from the beginning )</li>
+    1.1. come up with useful idea for the capstone
 
-## Convert the MVP into the final product
+    2.1. find the APIs to support it
 
-* make the website easy to use by the visitor (3 click rule)
-* make website code easy to maintain (expensive comments where necessary)
-* add the necessary accessibility code
-* improve the overall speed of the website
-* end to end testing
-* graceful error handling
-* non-tech user feedback
-* complete the readme file
+    3.1. test that the APIs are working in Ajax and that they are returning the relevant data
+2. Create the Minimum Viable Product (MVP)
 
-## Deliver
+    2.1. create a Github repository (on the Github server) with a name like this: [name-of-the-project] + "-api-capstone"; the name will contain only lower case letters and dashes (-) between the words
+
+    2.2. clone locally in order to create the local folder
+
+    2.3. in this folder we will create a blank index.html file; styles.css file; app.js file
+
+    2.4. in index.html will create the links to the styles.css and the app.js
+
+    2.5. in the same folder will create an empty readme file
+
+    2.6. follow the Thinkful course part about the wireframes and user cases
+
+    2.7. create the html and css look and feel to the height of detail possible without javascript
+
+    2.8. create the JS functionality (will integrate the API tests from the beginning)
+3. Convert the MVP into the final product
+
+    3.1. make the website easy to use by the visitor (3 click rule)
+
+    3.2. make website code easy to maintain (expensive comments where necessary)
+
+    3.3. add the necessary accessibility code
+
+    3.4. improve the overall speed of the website
+
+    3.5. end to end testing
+
+    3.6. graceful error handling
+
+    3.7. non-tech user feedback
+
+    3.8. complete the readme file
+4. Deliver
