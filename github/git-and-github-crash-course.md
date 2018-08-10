@@ -10,8 +10,11 @@
 
 1. Git is the system, Github is the interface to that system. The Git is like engine in a car and Github is the dashboard.
 2. Apart from Github, you can also control Git using command line or Github Desktop software (https://desktop.github.com/):
+
     2.1. command line is most advanced tool to control git, but is going to display one thing at a time (status, current branch, etc)
+
     2.2. github desktop (purple cat software) can only complete basic tasks (commit, push, pull, etc) but is going to display full info about your repository
+
     2.3. github.com is website specialised in the collaborative (multiple user collaborate in the same code) part of the git
 
 
