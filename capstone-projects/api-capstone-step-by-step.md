@@ -4,9 +4,9 @@
 
     1.1. come up with useful idea for the capstone
 
-    2.1. find the APIs to support it
+    1.2. find the APIs to support it
 
-    3.1. test that the APIs are working in Ajax and that they are returning the relevant data
+    1.3. test that the APIs are working in Ajax and that they are returning the relevant data
 2. Create the Minimum Viable Product (MVP)
 
     2.1. create a Github repository (on the Github server) with a name like this: [name-of-the-project] + "-api-capstone"; the name will contain only lower case letters and dashes (-) between the words
