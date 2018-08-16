@@ -32,14 +32,23 @@
 There are 2 main cycles:
 
 1. `Create-a-New-Project Cycle` (create the repository ON the Github.com SERVER here https://github.com/new and then clone it locally)
-        1.1. Go to github.com and create a new repository
-        2.1. Clone that repository from github.com on own computer using the command line or the Github Desktop UI Software
-            * echo "# test" >> README.md
-            * git init
-            * git add README.md
-            * git commit -m "first commit"
-            * git remote add origin https://github.com/username/test.git
-            * git push -u origin master
+
+    1.1. Go to github.com and create a new repository
+
+    2.1. Clone that repository from github.com on own computer using the command line or the Github Desktop UI Software
+
+        * echo "# test" >> README.md
+
+        * git init
+
+        * git add README.md
+
+        * git commit -m "first commit"
+
+        * git remote add origin https://github.com/username/test.git
+
+        * git push -u origin master
+
 2. `Daily-Back-Up-Your-Project Cycle` (commit changes and synchronize)
         Note: Run the following command inside the repository folder
 
