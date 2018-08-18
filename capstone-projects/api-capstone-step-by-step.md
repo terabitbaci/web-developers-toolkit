@@ -26,9 +26,9 @@
     2.8. create the JS functionality (will integrate the API tests from the beginning)
 3. Convert the MVP into the final product
 
-    3.1. make the website easy to use by the visitor (3 click rule)
+    3.1. make the website easy to use by the visitor (3 clicks rule)
 
-    3.2. make website code easy to maintain (expensive comments where necessary)
+    3.2. make website code easy to maintain (extensive comments where necessary)
 
     3.3. add the necessary accessibility code
 
