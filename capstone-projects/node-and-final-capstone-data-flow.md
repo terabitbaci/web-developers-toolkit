@@ -3,7 +3,7 @@
 
 
 
-## 1 /public/index.html file
+## 1. /public/index.html file
 * in the html document there is a form
 ```html
 <form class="login-form">
@@ -23,7 +23,7 @@
 
 
 
-## 2 /public/client.js file
+## 2. /public/client.js file
 * in the client/js there are triggers for the button $("button-name").on("click", function(){  do stuff })
 * in the client/js inside the triggers there is a ajax api call $.ajax()
 
@@ -76,7 +76,7 @@ $(".login-form").submit(function (event) {
 
 
 
-## 3 /server.js file
+## 3. /server.js file
 * in the server.js there is an api endpoint app.get("/some-url"), req, res ....
 * in the server.js in the api endpoint there is a Mongo code to connect to the Mongoose schema User.create()
 
@@ -154,8 +154,8 @@ app.post('/users/login', function (req, res) {
 
 
 
-## 4 /models/user.js  file
-* Mongoose the schema
+## 4. /models/user.js  file
+* Mongoose schema
 
 ```javascript
 const mongoose = require('mongoose');
@@ -194,4 +194,4 @@ module.exports = User;
 
 
 
-## 5 Check the data inside the Mongo DB (Using Robo 3T)
+## 5. Check the data inside the Mongo DB (Using Robo 3T)
