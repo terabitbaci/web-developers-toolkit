@@ -172,12 +172,39 @@ console.log('---------------------------');
 console.log('Calculate Morton Number');
 console.log('---------------------------');
 
-// let calcMorton = (int1, int2) =>{
-//     int1Binary = padBin(int1.toString(2));
-//     int2Binary = padBin(int2.toString(2));
-// }
-//
-// calcMorton(1,2);
-// calcMorton(1,3);
-// In a Morton Number, the bits of two numbers are interleaved. So if your inputs
-// were: 15 (00001111) and 48 (00110000), your output would be 1450 (0000010110101010).
+//original solution by Josh P.
+function morton(value1, value2) {
+    let value1EightBit = 0
+    let value2EightBit = 0;
+    let morton = 0;
+
+    // values are shifted to the left and most significant bit
+    // is taken from each of them and added to morton, which is
+    // being shifted to the left as values are being inserted
+
+    for (let i = 0; i < 8; i++) {
+
+        // shift morton to receive the next insert from value1
+        morton = morton << 1;
+        // get most significant bit of value1
+        value1EightBit = value1 & 0b10000000;
+        // if this is a 1, add it to the tail end of morton
+        if (value1EightBit > 0) {
+            morton = morton | 1;
+        }
+        value1 = value1 << 1;
+
+        // shift morton to receive the next insert from value2
+        morton = morton << 1;
+        // get most significant bit of value2
+        value2EightBit = value2 & 0b10000000;
+        // if this is a 1, add it to the tail end of morton
+        if (value2EightBit > 0) {
+            morton = morton | 1;
+        }
+        value2 = value2 << 1;
+    }
+    return morton;
+}
+
+console.log(morton(0b00001111, 0b00110000));
