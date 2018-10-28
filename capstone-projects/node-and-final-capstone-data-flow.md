@@ -1,6 +1,4 @@
-# Node capstone data flow based on the file structure
-
-
+# A. Node capstone LOGIN data flow based on the file structure
 
 
 ## 1. /public/index.html file
