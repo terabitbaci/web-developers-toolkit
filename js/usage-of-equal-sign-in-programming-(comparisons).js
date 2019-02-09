@@ -19,4 +19,13 @@ boolean = !boolean (now boolean = false)
 3 === "3" //false
 //negative
 3 !== "3" //true
+
+
+
+<= is the less or equal to value (ex: 3 <= 9)
+>= is the more or equal to value (ex: 13 >= 7)
+
+|| is any of the coditionals is true (ex: if( (animal == "dog") || (animal == "cat") ) )
+&& is both the coditionals is true in the same time (ex: if( (animal == "dog") && (animal == "cat") ) )
+
 */
