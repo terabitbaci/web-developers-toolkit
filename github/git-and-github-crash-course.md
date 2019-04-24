@@ -1,4 +1,4 @@
-## What is Git?
+## A. What is Git?
 
 
 1. Git (Global Information Tracker) is a version control system that is widely used for software development. It is a distributed revision control system with an emphasis on speed, data integrity and support for distributed, non-linear workflows.
@@ -6,7 +6,7 @@
 3. git (British informal noun) = an unpleasant or contemptible person (example "that mean old git")
 
 
-## What is the difference between Git and Github?
+## B. What is the difference between Git and Github?
 
 1. Git is the system, Github is the interface to that system. The Git is like engine in a car and Github is the dashboard.
 2. Apart from Github, you can also control Git using command line or Github Desktop software (https://desktop.github.com/):
@@ -18,7 +18,7 @@
     2.3. github.com is website specialised in the collaborative (multiple user collaborate in the same code) part of the git
 
 
-## What is Git used for?
+## C. What is Git used for?
 1. To create backups (the most often usage):
         --> if the code has no bugs or conflicts and a part of the website is complete (for example "header ready").
 2. To test new code:
@@ -27,7 +27,7 @@
         --> Each developer creates a new branch with the name of they want to build (let’s say one is building the login and the other the shopping chart); they keep working in their own branches until they complete the tasks; after that they take all the code from the master, we make sure that there are no conflicts or errors, and than they push the code back to master (including the new functionality).
 
 
-## How Git works?
+## D. How Git works?
 
 There are 2 main cycles:
 
@@ -35,7 +35,7 @@ There are 2 main cycles:
 
     1.1. Go to github.com and create a new repository
 
-    2.1. Clone that repository from github.com on own computer using the command line or the Github Desktop UI Software
+    1.2. Clone that repository from github.com on own computer using the command line or the Github Desktop UI Software
 
         * echo "# test" >> README.md
 
@@ -68,7 +68,7 @@ There are 2 main cycles:
     > git add . ; git commit -m 'REPLACE-ME'; git pull origin master; git push --set-upstream origin master
 
 
-## Common Git command lines
+## E. Common Git command lines
 
 1. `git init`: Initialize a new git repository
 2. `git add`: Stage a file for changes (watch these files for changes)
@@ -82,14 +82,14 @@ There are 2 main cycles:
 10. `git push`: Update remote repository
 
 
-## When to commit code to the server?
+## F. When to commit code to the server?
 1. when a particular part of the code is completed (let's say the footer is ready) BUT make sure there are no bugs or conflicts
 2. at the end of the day (but only if the code is fully functional and has no bugs)
 
 
 
 
-## Jargon Buster
+## G. Jargon Buster
 Usefull for the interview questions like "What is difference beetween clone and pull?")
 1. `fork` = on the Github.com server, copy repository from one user account to another (this is done without any connection to your local computer)
 2. `clone` = copy repository from your own account on the server to your own computer (only if you don't have project on your own computer)
@@ -99,7 +99,7 @@ Usefull for the interview questions like "What is difference beetween clone and 
 
 
 
-## Master and branches names and usage
+## H. Master and branches names and usage
 1. Master (in production environment this is the live website)
 2. facebook-login (some branch to test facebook login functionality)
 
@@ -107,7 +107,7 @@ Usefull for the interview questions like "What is difference beetween clone and 
 
 
 
-## Re-initialize the repository
+## I. Re-initialize the repository
 
 From command line (terminal) navigate to the repository folder and:
 1. list all the files and folders in the repo folder (including the hidden ones)
