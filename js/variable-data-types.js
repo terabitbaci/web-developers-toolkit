@@ -1,13 +1,13 @@
 //integer
-var integer = 1;
+let integer = 1;
 
 
 //string
-var string = 'dog';
+let string = 'dog';
 
 
 //boolean
-var boolean = true;
+let boolean = true;
 
 
 
@@ -15,20 +15,20 @@ var boolean = true;
 //arrays and objects have key (index) and values pairs
 
 //arays have integer as keys
-var computers = ["server", "desktop", "tablet"];
+let computers = ["server", "desktop", "tablet"];
 //is a shortcut for ..
-var computers = [0: "server", 1: "desktop", 2: "tablet"];
+let computers = [0: "server", 1: "desktop", 2: "tablet"];
 computers[0] = "server";
 
 //objects have string as keys
-var car = {
+let car = {
     "make": "Nissan",
     "model": "Terrano",
     "engine": "3.5l"
 };
 
 car.make = "Nissan";
-var carDetails = {
+let carDetails = {
     "make": "Nissan",
     "model": "Terrano",
     "engine": {
@@ -50,12 +50,12 @@ The functions are a set of instructions ready to be reused multiple times (is a 
  -- function name (ex: "addingNumbers") (example: like a the recipe title)
  -- input parameters or arguments (ex: "parameter1", "parameter2") (example: like a set of ingredients in a recipe)
  -- output parameters or arguments (ex: "result") (example: like the description of what dish gets cooked from that recipe)
- -- some set of instructions to convert the imput parameters into output (ex: "var result = parameter1 + parameter2;") (example: like the steps to cook the ingredients to create a dish in a recipe)
+ -- some set of instructions to convert the imput parameters into output (ex: "let result = parameter1 + parameter2;") (example: like the steps to cook the ingredients to create a dish in a recipe)
 
 function definition:
 */
-var addingNumbers = function (parameter1, parameter2) {
-    var result = parameter1 + parameter2;
+let addingNumbers = function (parameter1, parameter2) {
+    let result = parameter1 + parameter2;
     return result;
 };
 //function usage or call (example: like cooking a recipe from the cook book)
