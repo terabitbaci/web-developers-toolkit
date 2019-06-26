@@ -1,7 +1,7 @@
 ## Debugging tools (https://www.w3schools.com/js/js_debugging.asp)
 * console.log() or alert()
     * If your browser supports debugging, you can use console.log() to display JavaScript values in the debugger window
-* debugger()
+* debugger; (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger)
     * The debugger keyword stops the execution of JavaScript, and calls (if available) the debugging function.
     * This has the same function as setting a breakpoint in the debugger.
     * If no debugging is available, the debugger statement has no effect.
