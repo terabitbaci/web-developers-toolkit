@@ -25,19 +25,19 @@ while (counter < LIMIT) {
     counter + STEP;
 }
 
-//ascending while loop going TOWARDS the limit (1000)
+//ascending while loop going TOWARDS the limit (counting 0 to 1000 upwards)
 let c = 0;
 while (c < 1000) {
     c++;
 }
 
-//descending while loop going AWAY from the limit (5000)
-let d = 500;
+//ascending while loop going AWAY from the limit (counting from 5000 upwards)
+let d = 5000;
 while (d > 5000) {
     d++;
 } // ATTENTION: creates INFINITE LOOPS
 
-//descending while loop going TOWARDS from the limit (5000)
+//descending while loop going TOWARDS the limit (counting 10000 to 5000 downwards)
 let e = 10000;
 while (let e > 5000) {
     e--;
