@@ -1,12 +1,14 @@
 //Constant time O(1)
-//
+
 //Constant time complexity is the "holy grail". No matter the size of your input, the algorithm will take the same amount of time to complete. Examples of O(1) algorithms are accessing an array item or performing basic arithmetic operations (e.g., adding two numbers).
 
 function getRandomItem(array) {
-    let sum = 0,
-        ticks = 0;
+    let ticks = 0;
+
     //get a random number and access that element in the array
     const item = array[Math.floor(Math.random() * array.length)];
+
+    //for each coputation increment the number of clicks by one
     ticks++;
 
     return {
@@ -18,7 +20,8 @@ function getRandomItem(array) {
 
 function getRunTimeOperations(fn, input) {
     const {
-        ticks, result
+        ticks,
+        result
     } = fn(input);
     console.log(
         `With input of size ${input.length}, ${fn.name} ` +

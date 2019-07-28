@@ -8,17 +8,17 @@ The Usage of the Equal Sign in programming (Comparisons)
 var boolean = true;
 boolean = !boolean (now boolean = false)
 
-//non-strict comparisons (compare the variable only)
+//non-strict comparisons (compare the variable value only)
 //afirmative
 3 == "3" //true
 //negative
 3 != "3" //false
 
-//strict comparisons (compare the variable and the type of that variable)
+//strict comparisons (compare both value and the type of the variable)
 //afirmative
-3 === "3" //false
+3 === "3" //false becuase 3 is an integer while "3" is a string
 //negative
-3 !== "3" //true
+3 !== "3" //true becuase 3 is an integer while "3" is a string
 
 
 
