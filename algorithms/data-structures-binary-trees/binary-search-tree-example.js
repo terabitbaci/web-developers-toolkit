@@ -1,4 +1,4 @@
-// origianl solution provided by Sumit Ghosh (https://www.geeksforgeeks.org/implementation-binary-search-tree-javascript/)
+// original solution provided by Sumit Ghosh (https://www.geeksforgeeks.org/implementation-binary-search-tree-javascript/)
 
 
 // Node class
