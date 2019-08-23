@@ -28,6 +28,8 @@ let car = {
 };
 
 car.make = "Nissan";
+
+
 let carDetails = {
     "make": "Nissan",
     "model": "Terrano",
@@ -35,9 +37,14 @@ let carDetails = {
         "bhp": "160",
         "size": "3.5l",
         "turbo": true
+    },
+    //methods are functions living inside objects
+    myCar: function () {
+        return this.make + " " + this.model;
     }
 };
-carDetails.engine.turbo = true
+carDetails.engine.turbo = true;
+carDetails.myCar() = "Nissan Terrano";
 
 
 
