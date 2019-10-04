@@ -1,13 +1,16 @@
 //integer
 let integer = 1;
+console.log(integer); // shows "1"
 
 
 //string
 let string = 'dog';
+console.log(string); // shows "dog"
 
 
 //boolean
 let boolean = true;
+console.log(boolean); // shows "true"
 
 
 
@@ -17,8 +20,8 @@ let boolean = true;
 //arays have integer as keys
 let computers = ["server", "desktop", "tablet"];
 //is a shortcut for ..
-let computers = [0: "server", 1: "desktop", 2: "tablet"];
-computers[0] = "server";
+//let computers = [0: "server", 1: "desktop", 2: "tablet"];
+console.log(computers[0]); // shows "server"
 
 //objects have string as keys
 let car = {
@@ -26,8 +29,7 @@ let car = {
     "model": "Terrano",
     "engine": "3.5l"
 };
-
-car.make = "Nissan";
+console.log(car.make); // shows "Nissan"
 
 
 let carDetails = {
@@ -43,8 +45,8 @@ let carDetails = {
         return this.make + " " + this.model;
     }
 };
-carDetails.engine.turbo = true;
-carDetails.myCar() = "Nissan Terrano";
+console.log(carDetails.engine.turbo); // shows "true"
+console.log(carDetails.myCar()); // shows "Nissan Terrano"
 
 
 
@@ -66,5 +68,5 @@ let addingNumbers = function (parameter1, parameter2) {
     return result;
 };
 //function usage or call (example: like cooking a recipe from the cook book)
-addingNumbers(3, 4); //result is 7
-addingNumbers(2, 9); //result is 11
+console.log(addingNumbers(3, 4)); //result is 7
+console.log(addingNumbers(2, 9)); //result is 11
