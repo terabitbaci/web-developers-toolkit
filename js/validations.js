@@ -3,7 +3,7 @@ function checkInteger(inputInteger) {
     if (inputInteger == "") {
         outputValue = 0;
     }
-    if (inputInteger == undefined) {
+    if (inputInteger === undefined) {
         outputValue = 0;
     }
     if (inputInteger == null) {
@@ -14,7 +14,7 @@ function checkInteger(inputInteger) {
 
 function checkString(inputString) {
     let outputText = inputString;
-    if (inputString == undefined) {
+    if (inputString === undefined) {
         outputText = "";
     }
     if (inputString == null) {
@@ -25,7 +25,7 @@ function checkString(inputString) {
 
 function checkURL(inputURL) {
     let outputURL = inputURL;
-    if (inputURL == undefined) {
+    if (inputURL === undefined) {
         outputURL = "/";
     }
     if (inputURL == null) {
