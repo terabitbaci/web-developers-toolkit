@@ -1,23 +1,23 @@
-function checkValue(inputValue) {
-    let outputValue = inputValue;
-    if (inputValue == "") {
+function checkInteger(inputInteger) {
+    let outputValue = inputInteger;
+    if (inputInteger == "") {
         outputValue = 0;
     }
-    if (inputValue == undefined) {
+    if (inputInteger == undefined) {
         outputValue = 0;
     }
-    if (inputValue == null) {
+    if (inputInteger == null) {
         outputValue = 0;
     }
     return outputValue;
 }
 
-function checkText(inputText) {
-    let outputText = inputText;
-    if (inputText == undefined) {
+function checkString(inputString) {
+    let outputText = inputString;
+    if (inputString == undefined) {
         outputText = "";
     }
-    if (inputText == null) {
+    if (inputString == null) {
         outputText = "";
     }
     return outputText;
@@ -33,3 +33,8 @@ function checkURL(inputURL) {
     }
     return outputURL;
 }
+
+// how to use
+console.log(checkInteger(25));
+console.log(checkString("hey"));
+console.log(checkURL("google.com"));
