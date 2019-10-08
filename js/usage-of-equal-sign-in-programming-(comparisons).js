@@ -6,7 +6,7 @@ The Usage of the Equal Sign in programming (Comparisons)
 
 //change the boolean value of the variable to the opposite of it (if the boolean was true is going to be false)
 var boolean = true;
-boolean = !boolean (now boolean = false)
+boolean = !boolean (OPPOSITE boolean = false)
 
 //non-strict comparisons (compare the variable value only)
 //afirmative
