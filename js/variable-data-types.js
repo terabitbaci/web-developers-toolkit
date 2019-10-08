@@ -1,29 +1,29 @@
-//integer
-let integer = 1;
-console.log(integer); // shows "1"
+//(1) integer
+let myInteger = 1;
+console.log(myInteger); // shows "1"
 
 
-//string
-let string = 'dog';
-console.log(string); // shows "dog"
+//(2) string
+let myString = 'dog';
+console.log(myString); // shows "dog"
 
 
-//boolean
-let boolean = true;
-console.log(boolean); // shows "true"
+//(3) boolean
+let myBoolean = true;
+console.log(myBoolean); // shows "true"
 
 
 
 
 //arrays and objects have key (index) and values pairs
 
-//arays have integer as keys
+//(4) arays have integer as keys
 let computers = ["server", "desktop", "tablet"];
 //is a shortcut for ..
 //let computers = [0: "server", 1: "desktop", 2: "tablet"];
 console.log(computers[0]); // shows "server"
 
-//objects have string as keys
+//(5) objects have string as keys
 let car = {
     "make": "Nissan",
     "model": "Terrano",
@@ -51,7 +51,7 @@ console.log(carDetails.myCar()); // shows "Nissan Terrano"
 
 
 
-//function definition used to create code templates https://github.com/mariusbanea/web-developers-toolkit/blob/master/js/functions-and-objects-theory-with-examples.js
+//(6) function definition used to create code templates https://github.com/mariusbanea/web-developers-toolkit/blob/master/js/functions-and-objects-theory-with-examples.js
 /*
 The functions are a set of instructions ready to be reused multiple times (is a like a recipe in a cook book)
 
