@@ -63,7 +63,7 @@ The functions are a set of instructions ready to be reused multiple times (is a 
 
 function definition:
 */
-let addingNumbers = function (parameter1, parameter2) {
+function addingNumbers(parameter1, parameter2) {
     let result = parameter1 + parameter2;
     return result;
 };
