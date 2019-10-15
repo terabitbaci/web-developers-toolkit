@@ -1,5 +1,15 @@
 'use strict'
 
+// ADDS PADDING FOR 8-BIT NUMBERS
+// creates a string of (leading) zeros (most significant bits) to fill out the byte
+let padBin = (bin) => {
+    var numZeros = 8 - bin.length;
+    for (var i = 0; i < (numZeros); i++) {
+        bin = '0' + bin;
+    }
+    return bin;
+}
+
 // ---------- LEFT SHIFT OPERATOR (<<) -----------
 // Write a function that takes in a decimal value and a value that represents the
 // number of bit positions to shift left with. Return or print out the final base
@@ -10,13 +20,20 @@ console.log('leftShift tests');
 console.log('---------------------------');
 
 function leftShift(int, numOfPositionsToShift) {
-    shifted = int << numOfPositionsToShift;
-    intBinary = padBin(int.toString(2));
-    shiftedBinary = padBin(shifted.toString(2));
+    let shifted = int << numOfPositionsToShift;
+    // convert the input number to binary and add padding to make an 8-bit number
+    let intBinary = padBin(int.toString(2));
+    // convert the shifted number to binary and add padding to make an 8-bit number
+    let shiftedBinary = padBin(shifted.toString(2));
+    // show the input number
     console.log('int: ', int);
+    // show the new shifted number
     console.log('shifted: ', shifted);
+    // show how many positions the number was shifted
     console.log('binary shifted ', numOfPositionsToShift, ' positions to the left');
+    // show the input number in binary
     console.log('intBinary: ', intBinary);
+    // show the new shifted number in binary
     console.log('shiftedBinary:', shiftedBinary);
 }
 
@@ -40,11 +57,13 @@ console.log('rightShift tests');
 console.log('---------------------------');
 
 function rightShift(int, numOfPositionsToShift) {
-    shifted = int >> numOfPositionsToShift;
+    let rightShifted = int >> numOfPositionsToShift;
+    let intBinary = 0;
     intBinary = padBin(int.toString(2));
-    shiftedBinary = padBin(shifted.toString(2));
+    let shiftedBinary = 0;
+    shiftedBinary = padBin(rightShifted.toString(2));
     console.log('int: ', int);
-    console.log('shifted: ', shifted);
+    console.log('rightShifted: ', rightShifted);
     console.log('binary shifted ', numOfPositionsToShift, ' positions to the right');
     console.log('intBinary: ', intBinary);
     console.log('shiftedBinary:', shiftedBinary);
@@ -63,11 +82,13 @@ console.log('zeroFillRightShift tests');
 console.log('---------------------------');
 
 function zeroFillRightShift(int, numOfPositionsToShift) {
-    shifted = int >>> numOfPositionsToShift;
+    let zeroFillShifted = int >>> numOfPositionsToShift;
+    let intBinary = 0;
     intBinary = padBin(int.toString(2));
-    shiftedBinary = padBin(shifted.toString(2));
+    let shiftedBinary = 0;
+    shiftedBinary = padBin(zeroFillShifted.toString(2));
     console.log('int: ', int);
-    console.log('shifted: ', shifted);
+    console.log('zeroFillShifted: ', zeroFillShifted);
     console.log('binary shifted ', numOfPositionsToShift, ' positions to the right');
     console.log('intBinary: ', intBinary);
     console.log('shiftedBinary:', shiftedBinary);
