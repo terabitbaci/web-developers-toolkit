@@ -42,11 +42,11 @@ let carDetails = {
     },
     //methods are functions living inside objects
     myCar: function () {
-        return this.make + " " + this.model;
+        return `My Car is a ${this.make} ${this.model}`;
     }
 };
 console.log(carDetails.engine.turbo); // shows "true"
-console.log(carDetails.myCar()); // shows "Nissan Terrano"
+console.log(carDetails.myCar()); // shows "My Car is a Nissan Terrano"
 
 
 
